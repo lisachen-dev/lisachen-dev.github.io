@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="3; url=https://www.lisachenworks.com/">
+    <script>
+        setTimeout(() => {
+            window.location.href = "https://www.lisachenworks.com/";
+        }, 3000);
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap');
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #fae3d9, #bb9cd5);
+            color: #3d2c2e;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .message {
+            font-size: 1.2rem;
+            margin-top: 15px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        a {
+            color: #6a0572;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #ff6b6b;
+        }
+
+        img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-top: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .loader {
+            width: 80px;
+            height: 80px;
+            border: 8px solid rgba(255, 255, 255, 0.3);
+            border-top: 8px solid #ff6b6b;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-top: 30px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+<h1>🚀 Redirecting to my new portfolio...</h1>
+<p class="message">If you're not redirected in a few seconds, <a href="https://www.lisachenworks.com/">click here</a>.</p>
+<img src="./img/avatar.png" alt="Avatar">
+<div class="loader"></div>
+</body>
+</html>
